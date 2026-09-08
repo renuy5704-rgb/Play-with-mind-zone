@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Games</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 430px;
+    text-align: center;
+}
+
+.title {
+    color: white;
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #eeeeee;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.game-card {
+    background: white;
+    border-radius: 22px;
+    padding: 22px;
+    margin: 16px 0;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.game-icon {
+    font-size: 55px;
+    margin-bottom: 8px;
+}
+
+.game-name {
+    font-size: 25px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.game-description {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.play-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 14px;
+    border-radius: 14px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.play-btn:hover {
+    transform: scale(1.03);
+}
+
+.snake {
+    background: linear-gradient(135deg, #22c55e, #15803d);
+}
+
+.reasoning {
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+}
+
+.tictactoe {
+    background: linear-gradient(135deg, #f97316, #dc2626);
+}
+
+.footer {
+    color: white;
+    margin-top: 20px;
+    font-size: 13px;
+    opacity: 0.9;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="title">🎮 MY GAMES</div>
+
+    <div class="subtitle">
+        Choose a game and start playing!
+    </div>
+
+    <!-- Feed Snake -->
+    <div class="game-card">
+
+        <div class="game-icon">🐍</div>
+
+        <div class="game-name">
+            Feed Snake
+        </div>
+
+        <div class="game-description">
+            Feed the snake, collect food and increase your score!
+        </div>
+
+        <a
+        class="play-btn snake"
+        href="https://renuy5704-rgb.github.io/Feedsnake/"
+        target="_blank">
+            ▶ PLAY NOW
+        </a>
+
+    </div>
+
+
+    <!-- Reasoning Numbers -->
+    <div class="game-card">
+
+        <div class="game-icon">🔢</div>
+
+        <div class="game-name">
+            Reasoning Numbers
+        </div>
+
+        <div class="game-description">
+            Test your number reasoning and challenge your brain!
+        </div>
+
+        <a
+        class="play-btn reasoning"
+        href="https://renuy5704-rgb.github.io/Reasoning-numbers/"
+        target="_blank">
+            ▶ PLAY NOW
+        </a>
+
+    </div>
+
+
+    <!-- Tic Tac Toe -->
+    <div class="game-card">
+
+        <div class="game-icon">❌⭕</div>
+
+        <div class="game-name">
+            Tic Tac Toe
+        </div>
+
+        <div class="game-description">
+            Play Tic Tac Toe against the computer or with a friend!
+        </div>
+
+        <a
+        class="play-btn tictactoe"
+        href="https://renuy5704-rgb.github.io/Tuc-tac-toe/"
+        target="_blank">
+            ▶ PLAY NOW
+        </a>
+
+    </div>
+
+
+    <div class="footer">
+        🎯 Have Fun & Keep Playing!
+    </div>
+
+</div>
+
+</body>
+  </html>
